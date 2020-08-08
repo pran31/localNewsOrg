@@ -1,0 +1,32 @@
+GET http://localhost:5000/api/v1/news?q=Alexander
+
+###
+
+POST http://localhost:5000/api/v1/news
+Content-Type: application/json
+
+{"source":{"id":"the-verge","name":"The Verge"},"author":"Makena Kelly","title":"Coinbase says it halted more than $280,000 in bitcoin transactions during Twitter hack","description":"The cryptocurrency exchange Coinbase said that it stopped around 1,100 customers from sending bitcoin to hackers who gained access to high-profile Twitter accounts.","url":"https://www.theverge.com/2020/7/20/21331499/coinbase-twitter-hack-elon-musk-bill-gates-joe-biden-bitcoin-scam","urlToImage":"https://cdn.vox-cdn.com/thumbor/j9doeI17eouZs-YIK4CCrW4nVSg=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/20086189/acastro_200715_1777_twitter_0002.0.jpg","publishedAt":"2020-07-20T18:08:56Z","content":"The company blacklisted the bitcoin address\r\nIllustration by Alex Castro\r\nThe cryptocurrency exchange Coinbase said that it stopped around 1,100 customers from sending bitcoin to hackers who gained a… [+1775 chars]"}
+###
+
+DELETE http://localhost:5000/api/v1/news/5f2d0d48ab07af7c10d98644
+###
+PUT http://localhost:5000/api/v1/news/5f2b29249f59cb20bc09b495
+Content-Type: application/json
+
+{
+"source": {
+"id": "techcrunch",
+"name": "TechCrunch"
+},
+"author": "Mike Butcher",
+"title": "Hear Cloudflare and PlanGrid's amazing journey from founding to exit at Disrupt 2020",
+"description": "How and when should startup founders think about the “exit”? It’s the perennial question in tech entrepreneurialism, but the how’s and when’s are questions to which there are a multitude of answers. For one thing, new founders often forget that the terms of t…",
+"url": "https://techcrunch.com/2020/08/05/hear-cloudflare-and-plangrids-amazing-journey-from-founding-to-ipo-at-disrupt-2020/",
+"urlToImage": "https://techcrunch.com/wp-content/uploads/2020/08/Zatlyn-Young-disrupt.jpg?w=711",
+"publishedAt": "2020-08-05T15:45:24Z",
+"content": "How and when should startup founders think about the exit? Its the perennial question in tech entrepreneurialism, but the hows and whens are questions to which there are a multitude of answers. For o… [+1544 chars]"
+}
+
+
+###
+GET http://localhost:5000/api/v1/news/5f2b29249f59cb20bc09b495

@@ -1,6 +1,3 @@
-# localNewsOrg
-Creating the REST API's and do CRUD for news Magazine
-
 The steps for running the app locally
 
 1. Download the zip then keep the node and npm version updated
